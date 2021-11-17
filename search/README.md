@@ -11,5 +11,8 @@ Basically, `sed` and `vim` share about the same searching patterns.
     - `/^\s\{4\}[^ ]`
     - `/^\s\s\s\s[^ ]`
   - It might be interesting to set file type specific shortcut key combinations for such a search, e.g. for Python
-
+- Find variable definition in the same file
+  - `gd` short for **Go to definition**. First occurrence of the word under cursor in the current function
+  - `gD` goes to the first occurrence of the word under cursor in the current file
+  - `[I` displays all the occurrences of the word along with line number
 

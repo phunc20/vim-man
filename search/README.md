@@ -15,4 +15,7 @@ Basically, `sed` and `vim` share about the same searching patterns.
   - `gd` short for **Go to definition**. First occurrence of the word under cursor in the current function
   - `gD` goes to the first occurrence of the word under cursor in the current file
   - `[I` displays all the occurrences of the word along with line number
-
+- Exact match
+  - say, you want to find the word `mode` but not `model`, `modest`, you could do **`\<mode\>`**
+  - you can also `mode\>` if you only want to restrict its RHS. I did not verify the mechanism, but I think that
+    this is equiv. to `mode[^a-zA-Z]`

@@ -34,4 +34,7 @@ Type Name Content
 Press ENTER or type command to continue
 ```
 
+To paste text from one of these registers, say from `"9`, it
+suffices to type `"9p` in normal mode.
+
 See more at `:h reg`

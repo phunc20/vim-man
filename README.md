@@ -9,3 +9,8 @@ Hope that it will not only help myself, but also others.
 - delete
 
 yank and put simply means copy and paste, resp.
+
+
+## Ref.
+- <https://vim.fandom.com/wiki/Vim_Tips_Wiki>
+- <https://learnvimscriptthehardway.stevelosh.com/>

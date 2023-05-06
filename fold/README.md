@@ -1,0 +1,4 @@
+- `zf`: Create fold
+- `za`: Toggle fold (at cursor position)
+    - Prefer this to `zd`, which once delete cannot recover
+- `zd`: Delete fold (at cursor position)

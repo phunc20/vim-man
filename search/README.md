@@ -1,3 +1,13 @@
+## Find in Normal Mode
+- Forward find in normal mode: `f` and `/` are **different**!
+- Backward find in normal mode: `F` and `?`
+
+What do we mean by different? Well, here are a few major differences:
+- `f` and `F` searches **in the same line**, i.e. when there
+  is no more matched patterns, they **wouldn't** further search into next line. However, `/` and `?` searches across the entire text file [and even wraps around in case of exhaustion of file]
+- `f` and `F`'s repeat search shortcut keys are `;` and `,` while those of `/` and `?` are `n` and `N`
+
+
 ## Relationship with `sed`
 Basically, `sed` and `vim` share about the same searching patterns.
 

@@ -38,3 +38,9 @@ To paste text from one of these registers, say from `"9`, it
 suffices to type `"9p` in normal mode.
 
 See more at `:h reg`
+
+
+## Refs
+- <https://stackoverflow.com/questions/1497958/how-do-i-use-vim-registers>
+- <https://www.baeldung.com/linux/vim-registers>
+- <https://www.brianstorti.com/vim-registers/>

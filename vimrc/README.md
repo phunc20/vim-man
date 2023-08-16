@@ -1,3 +1,4 @@
+## The Configuration File
 Depending on your Vim, the variable `$MYVIMRC` will point to
 the file path of your Vim's configuration file, e.g.
 - Vim: Usually `~/.vimrc`
@@ -15,3 +16,7 @@ The following are a few examples of how to use `$MYVIMRC`:
   ```vim
   :source $MYVIMRC<CR>
   ```
+
+
+## Copy and Paste
+Cf. `../registers/README.md`

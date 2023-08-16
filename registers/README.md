@@ -1,3 +1,35 @@
+## Copy and Paste
+- X
+    - Primary selection: `Shift-Insert`
+    - Secondary selection
+    - Clipboard selection: `Ctrl-v`
+    - What you copy in X either by, say, `Ctrl-v` in browser, or by, say,
+      `Ctrl-Shift-v` in the terminal will be saved into **both the primary
+      and the clipboard selections**
+- Vim
+    - In Vim, the concept of copy/paste or clipboard is called **register**.
+      Vim has multiple registers, which you can see by typing `:register` or
+      more briefly `:reg` inside a Vim session. Notably,
+        - `""` is what normally will be pasted when you press `p` in normal
+          mode in Vim. This is the same as pressing `""p`. As an extra example,
+          say, you want to paste the content of the 4th register, you could
+          accomplish this by `"4p`
+            - When you yank in Vim, Vim will usually save the yanked content
+              into both the `""` and `"0` registers
+            - But there's a but. When you set in your `.vimrc`
+              ```
+              set clipboard=unnamedplus
+              ```
+              The following behaviours will take place
+                - When you paste using `p` in Vim, the content from `"+` will get
+                  pasted
+                - When you yank in Vim, all four registers `"", "0, "*, "+` will save
+                  the yanked content
+                - When you copy in X (either `Ctrl-c` or `Ctrl-Shift-c`), only the
+                  registers `"*, "+` get the copied content, not `"", "0`
+        - `"*` corresponds to the **primary** selection
+        - `"+` corresponds to the **clipboard** selection
+
 ```vim
 :reg[isters]
 ```

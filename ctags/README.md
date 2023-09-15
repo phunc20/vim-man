@@ -1,19 +1,20 @@
 `ctags` is one way to allow `vim` users to jump back and forth
-btw function/variable definitions and their appearance in
+btw function/variable definitions and their appearances in
 a code base.
 
-To be enable the power of `ctags` in `vim`, one has to
+To taste the power of `ctags` in `vim`, one has to
 1. install `ctags` -- Usually the installation can be easily done
-   via your package manager if you use some Unix/Linux distro.
+   via your system's package manager if you use some Unix/Linux distro.
 2. Run `ctags` once to parse all the related files in your code base.  
-   Usually, people run `ctags` as follows from the uppest directory level
+   Usually, people run `ctags` as follows from the upmost directory level
    of their code base (or their repo):
    ```sh
    ctags -R .
    ```
    However, it is possible that one has populated one's repo with miscellaneous
-   files that are not code, e.g. model weight file, image/text data files, etc.  
-   The following is one quick workaround:
+   files that are not code, e.g. model weight file, image/text data files, etc.
+   Tagging such files would deteriorate the performance.  
+   The following is one quick workaround for this:
    ```sh
    ctags $(git ls-files)
    ```

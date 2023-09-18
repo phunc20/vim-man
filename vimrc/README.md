@@ -17,6 +17,12 @@ The following are a few examples of how to use `$MYVIMRC`:
   :source $MYVIMRC<CR>
   ```
 
+In order to start `vim` or `nvim` with a configuration file other than
+the one pointed to by `$MYVIMRC`, use the `-u` option:
+```bash
+$ vim -u /path/to/customed.vimrc
+```
+
 
 ## Copy and Paste
 Cf. `../registers/README.md`

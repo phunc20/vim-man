@@ -1,1 +1,2 @@
 - [`vim-abolish`](https://github.com/tpope/vim-abolish)
+- [`semshi`](https://github.com/numirias/semshi)

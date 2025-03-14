@@ -1,4 +1,7 @@
-
+- across all opened files, e.g.
+  ```
+  bufdo %s/string/replacement/g
+  ```
 - 4 spaces to 2 spaces
   - `%s;^\(\s\+\);\=repeat(' ', len(submatch(0))/2);g`
   - More precisely, the above demands to divide the number of spaces by 2.
